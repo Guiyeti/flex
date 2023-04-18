@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo</title>
+</head>
+<body>
+
+	<script>
+
+		// Definir las dimensiones de la pirámide
+		var filas = 3;
+		var columnas = 5;
+
+		// Calcular la posición de inicio de la pirámide
+		var posicionInicio = Math.floor((window.innerWidth - columnas) / 2);
+
+		// Imprimir la pirámide
+		for (var i = 0; i < filas; i++) {
+
+			// Calcular la posición de inicio de la fila actual
+			var posicionFila = posicionInicio - Math.floor(columnas / 2) + i * columnas;
+
+			// Imprimir los elementos de la fila actual
+			for (var j = 0; j < columnas; j++) {
+				if (j >= Math.floor(columnas / 2) - i && j <= Math.floor(columnas / 2) + i) {
+					document.write("o");
+				} else {
+					document.write("&nbsp;"); // Espacio en blanco para rellenar
+				}
+			}
+
+			// Insertar salto de línea
+			document.write("<br>");
+
+		}
+
+	</script>
+
+</body>
+</html>
