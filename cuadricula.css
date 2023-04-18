@@ -1,0 +1,35 @@
+/*
+para hacer los 5 divs distribuidos como un numero 5
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#pantalla{
+    margin: 2vh 2vw;
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+article{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+#fc{
+    justify-content: center;
+}
+
+div{
+    text-align: center;
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    width: 15vw;
+    height: 15vh;
+    background-color: rgb(17, 245, 20);
+}
