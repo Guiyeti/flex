@@ -30,6 +30,7 @@ switch (cuadro){
 
 if(estecuadro!=""){
     estecuadro.innerHTML="HOLA";
+    
 }
 
 alert("si editas el html, puedes usar 3 js alternativos");
